@@ -1,0 +1,13 @@
+@import "base/_variables.scss";
+@import "base/animations.scss";
+@import "blocks/_promo.scss";
+//LAST IMPORT
+@import "_media.scss";
+*{
+	font-family: 'Rubik', sans-serif;
+	font-display: swap;
+}
+html, body { 
+	scroll-behavior: smooth !important;
+}
+

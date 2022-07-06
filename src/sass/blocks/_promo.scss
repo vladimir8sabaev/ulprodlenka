@@ -7,19 +7,26 @@
     background-repeat: no-repeat;
     &__header{
         font-weight: 500;
-        font-size: 200px; 
-        line-height: 200px;
+        font-size: 60px; 
+        line-height: 60px;
         color: white;
+        span{
+            font-size: 200px; 
+            line-height: 200px;
+        }
     }
     hr{
         color: white;
         height: 7px;
         opacity: 1;
+        margin-bottom: 180px;
     }
     li{
         a{
+            transition: 0.5s all;
             &:hover{
-                text-decoration:line-through;
+                text-decoration:underline;
+                //вставить анимацию
             }
         }
     }

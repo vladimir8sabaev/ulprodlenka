@@ -1,0 +1,66 @@
+.teachers{
+    min-height: 110vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../img/event-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 0;
+    hr{
+        color: black;
+        height: 0.5vw;
+        width: 39vw;
+        opacity: 1;
+        margin: 0 0;
+        margin-bottom: 10px;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        position: relative;
+        min-width: 300px;
+        height: 400px;
+        margin-top: 50px;
+        background-color:rgba($color: #ff0000, $alpha: 0.7);
+        border-radius: 20px;
+        padding: 20px 10px 20px 0;
+        z-index: 1;
+        &-bg{
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            height: 400px;
+            background-color: rgba($color: #d3d3d375, $alpha: 1.0);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        &-photo{
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+        &-name{
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+        }
+        &-more{
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: 500;
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+        }
+    }
+}

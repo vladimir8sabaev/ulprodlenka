@@ -69,7 +69,6 @@ $(document).ready(function(){
 		}
 	});
 	new WOW().init();
-
 	$('form').submit(function(e) {
         e.preventDefault();
         $.ajax({

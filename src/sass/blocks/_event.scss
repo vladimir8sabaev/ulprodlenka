@@ -1,0 +1,28 @@
+.event{
+    min-height: 110vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../img/event-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0 10px 0;
+    hr{
+        color: black;
+        height: 0.5vw;
+        width: 20vw;
+        opacity: 1;
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
+}
+.title-dark{
+    font-weight: 500;
+    font-size: 5vw; 
+    color: black;
+    margin: 0 0;
+    span{
+        color: red;
+        &:hover{
+            color: black;
+        }
+    }
+}

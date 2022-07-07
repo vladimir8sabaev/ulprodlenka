@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<section class="promo">
+	<section class="promo" id="promo">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="#">logo</a>
@@ -22,14 +22,14 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-evenly">
-						<li class="nav-item fs-3 ">
-							<a class="nav-link text-light" aria-current="page" href="#">Мероприятия</a>
-						</li>
 						<li class="nav-item fs-3">
-							<a class="nav-link text-light" aria-current="page" href="#">Учителя</a>
+							<a class="nav-link text-light" aria-current="page" href="#teachers">Преподаватели</a>
 						</li>
 						<li class="nav-item fs-3">
 							<a class="nav-link text-light" aria-current="page" href="#">Занятия</a>
+						</li>
+						<li class="nav-item fs-3 ">
+							<a class="nav-link text-light" aria-current="page" href="#event">Галерея</a>
 						</li>
 						<li class="nav-item fs-3">
 							<a class="nav-link text-light" aria-current="page" href="#">Контакты</a>
@@ -41,10 +41,164 @@
 		</nav>
 		<div class="container">
 			<hr>
-			<h1 class="promo__header"><span>Продленка</span> развивающий <br> детский <br> клуб </h1>
+			<h1 class="promo__header wow animate__animated animate__fadeInDown"><span>Продл<span>ё</span>нка</span> <br> детский <br>  развивающий <br> клуб </h1>
 		</div>
 	</section> 
 
+	<section class="teachers" id="teachers">
+		<div class="container">
+			<h2 class="title-dark">Пр<span>е</span>подаватели</h2>
+			<hr>
+			<div class="row justify-content-evenly teachers__items">
+				<div class="col-3 teachers__item teachers__item wow animate__animated animate__fadeInLeft ">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-3 teachers__item teachers__item wow animate__animated animate__fadeInLeft">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-3 teachers__item teachers__item wow animate__animated animate__fadeInLeft">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="w-100"></div>
+				<div class="col-3 teachers__item-main teachers__item wow animate__animated animate__fadeInRight">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-3 teachers__item-main teachers__item wow animate__animated animate__fadeInRight"">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-3 teachers__item-main teachers__item wow animate__animated animate__fadeInRight">
+					<div class="col-12 teachers__item-bg"></div>
+					<img src="img/teachers/dilara.jpg" alt="Dilara" class="teachers__item-photo">
+					<div class="teachers__item-name">Сабаева Диляра Анваровна</div>
+					<div class="teachers__item-more">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="event" id="event">
+		<div class="container">
+			<h2 class="title-dark">Гал<span>е</span>рея</h2>
+			<hr>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  	<div class="carousel-item active data-bs-interval="5000"">
+						<img src="img/carousel/0.jpg" class="d-block w-100" alt="0">
+				  	</div>
+				  	<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/1.jpg" class="d-block w-100" alt="1">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/2.jpg" class="d-block w-100" alt="2">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/3.jpg" class="d-block w-100" alt="3">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/4.jpg" class="d-block w-100" alt="4">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/5.jpg" class="d-block w-100" alt="5">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/6.jpg" class="d-block w-100" alt="6">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/7.jpg" class="d-block w-100" alt="7">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/8.jpg" class="d-block w-100" alt="8">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/9.jpg" class="d-block w-100" alt="9">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/10.jpg" class="d-block w-100" alt="10">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/11.jpg" class="d-block w-100" alt="11">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/12.jpg" class="d-block w-100" alt="12">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/13.jpg" class="d-block w-100" alt="13">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/14.jpg" class="d-block w-100" alt="14">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/15.jpg" class="d-block w-100" alt="15">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/16.jpg" class="d-block w-100" alt="16">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/17.jpg" class="d-block w-100" alt="17">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/18.jpg" class="d-block w-100" alt="18">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/19.jpg" class="d-block w-100" alt="19">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/20.jpg" class="d-block w-100" alt="20">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/21.jpg" class="d-block w-100" alt="21">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/22.jpg" class="d-block w-100" alt="22">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/23.jpg" class="d-block w-100" alt="23">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/24.jpg" class="d-block w-100" alt="24">
+				  	</div>
+					<div class="carousel-item data-bs-interval="5000"">
+						<img src="img/carousel/25.jpg" class="d-block w-100" alt="25">
+				  	</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -70,5 +224,7 @@
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<!-- last script -->
+	<script src="js/script.js"></script>
 </body>
 </html>

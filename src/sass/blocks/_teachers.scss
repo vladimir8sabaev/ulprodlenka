@@ -4,7 +4,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 30px 0;
     hr{
         color: black;
         height: 0.5vw;
@@ -19,18 +19,19 @@
     }
     &__item{
         position: relative;
-        min-width: 300px;
+        width: 300px;
         height: 400px;
         margin-top: 50px;
         background-color:rgba($color: #ff0000, $alpha: 0.7);
         border-radius: 20px;
-        padding: 20px 10px 20px 0;
         z-index: 1;
+        overflow-x: hidden;
         &-bg{
             position: absolute;
-            top: -10px;
-            left: -10px;
+            top: 0px;
+            left: -7px;
             height: 400px;
+            width: 300px;
             background-color: rgba($color: #d3d3d375, $alpha: 1.0);
             border-radius: 20px;
             z-index: -1;
@@ -49,8 +50,12 @@
             text-align: center;
         }
         &-more{
+            position: absolute;
+            display: block;
             text-align: center;
-            margin-top: 20px;
+            bottom:20px;
+            left: 50%;
+            transform: translateX(-50%);
             text-transform: uppercase;
             a{
                 color: black;
@@ -60,6 +65,66 @@
                     text-decoration: underline;
                     text-underline-offset: 2px;
                 }
+            }
+        }
+        &-wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+            position: relative;
+            height: 400px;
+        }
+        &-content{
+            padding: 20px 20px 20px 0;
+            width: 50%;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            padding-right: 8px;
+            transform: translateX(100%);
+            transition: 0.5s all;
+            &-active{
+                transform: translateX(0%);
+                margin-right: 0px;
+            }
+        }
+        &-list{
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 15px;
+            transition: 0.5s all;
+            margin-bottom: 0;
+            position: relative;
+            padding: 20px 27px 0 0px;
+            ul{
+                list-style-type:circle;
+                li{
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+            }
+            &-active{
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+        }
+        &-back{
+            position: absolute;
+            display: block;
+            text-align: center;
+            bottom:20px;
+            left: 50%;
+            transform: translateX(-60%);
+            text-transform: uppercase;
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover{
+                color: black;
+                text-decoration: underline;
+                text-underline-offset: 2px;
             }
         }
     }

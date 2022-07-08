@@ -14,7 +14,7 @@
             font-size: 12vw; 
             line-height: 12.5vw;
             span{
-                color: red;
+                color: rgba($color: #ff0000, $alpha: 1.0);
                 &:hover{
                     color: rgba($color: #ffffff, $alpha: 0.8);
                 }

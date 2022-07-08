@@ -1,0 +1,43 @@
+.title-white{
+    font-weight: 500;
+    font-size: 5vw; 
+    color: white;
+    margin: 0 0;
+    span{
+        color: red;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.contacts{
+    padding: 20px 0px;
+    min-height: 110vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/contacts-bg.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    hr{
+        color: white;
+        height: 0.5vw;
+        width: 46vw;
+        opacity: 1;
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
+    &__map{
+        position: relative;
+        z-index: 1;
+        border-radius: 20px;
+        &-bg{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 600px;
+            background-color: rgba($color: #ff0000, $alpha: 0.8);
+            top: 20px;
+            left: 20px;
+
+        }
+    }
+}

@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- !last stylesheet -->
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
 							<a class="nav-link text-light" aria-current="page" href="#event">Галерея</a>
 						</li>
 						<li class="nav-item fs-3">
-							<a class="nav-link text-light" aria-current="page" href="#">Контакты</a>
+							<a class="nav-link text-light" aria-current="page" href="#contacts">Контакты</a>
 						</li>
 					</ul>
 					<button class="btn btn btn-outline-light text-nowrap fs-5" type="submit">Связаться с нами </button>
@@ -173,7 +174,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="event" id="event">
 		<div class="container">
 			<h2 class="title-dark">Гал<span>е</span>рея</h2>
@@ -270,7 +270,18 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="title-white">Свяжит<span>е</span>сь с нами</h2>
+			<hr>
+			<div class="row-no-gutters">
+				<div class="col-6 contacts__map">
+					<div class="contacts__map-bg"></div>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2158462f1cffac6571247bd18f6f8f7befef2a4659e26943427e8f6f44224d57&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -295,7 +306,7 @@
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/wow.min.js"></script>
-	<!-- last script -->
+	<!-- !last script -->
 	<script src="js/script.js"></script>
 </body>
 </html>

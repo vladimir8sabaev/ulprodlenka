@@ -274,31 +274,58 @@
 		<div class="container">
 			<h2 class="title-white">Свяжит<span>е</span>сь с нами</h2>
 			<hr>
-			<div class="row-no-gutters">
-				<div class="col-6 contacts__map" id="map">
-					<div class="contacts__map-bg"></div>
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2158462f1cffac6571247bd18f6f8f7befef2a4659e26943427e8f6f44224d57&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+			<div class="row">
+				<div class="contacts__wrapper">
+					<div class="col-lg-6 col-12 contacts__left">
+						<div class="contacts__map" id="map">
+							<div class="contacts__map-bg"></div>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2158462f1cffac6571247bd18f6f8f7befef2a4659e26943427e8f6f44224d57&amp;width=95%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false"></script>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 contacts__right">
+						<form id="contacts-form" class="contacts-form col-8 offset-2">
+							<div class="contacts-form__header">Просто заполните форму</div>
+							<div class="contacts-form__label">Имя *</div>
+							<div class="input-group mb-2">
+								<span class="input-group-text"></span>
+								<input required name="name" type="text" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="contacts-form__label">Телефон *</div>
+							<div class="input-group mb-2">
+								<span class="input-group-text"></span>
+								<input name="phone" required placeholder="Ваш телефон" type="tel" class="form-control">
+							</div>
+							<div class="contacts-form__label">Электронная почта *</div>
+							<div class="input-group mb-2">
+								<span class="input-group-text"></span>
+								<input name="email" required placeholder="Ваш E-mail" type="email"
+								class="form-control">
+							</div>
+							<button class="mt-4 btn btn-outline-light" type="submit">Отправить</button>
+						</form>
+					</div>
 				</div>
 			</div>
-			<div class="modal" tabindex="-1">
-				<div class="modal-dialog">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title">Modal title</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <p>Modal body text goes here.</p>
-					</div>
-					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer__left col-6">
+					<div class="footer__adress  col-6">
+						<div class="footer__adress-header">Наш адрес:</div>
+						<div class="footer__adress-descr">ул. Фруктовая 4, <br> Дальнее Засвияжье, <br>Ульяновск</div>
+					</div>
+				</div>
+				<div class="footer__right col-6">
+					<div class="footer__about col-6 offset-2">
+						<div class="footer__about-header">О нас:</div>
+						<div class="footer__about-descr"> Телефон: <a href="tel:+79372732060">+7 (937) 273-20-60</a> <br> <a href="https://vk.com/ulprodlenka" target="_blank" class="footer__about-icon"><img src="icons/vk.svg" alt="vk"></a> <a href="https://vk.com/ulprodlenka" target="_blank">vk.com/ulprodlenka</a> <br><a href="https://vk.com/ulprodlenka" target="_blank" class="footer__about-icon"><img src="icons/website.svg" alt="website"></a> <a href="http://ulprodlenka.ru/" target="_blank">ulprodlenka.ru</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 

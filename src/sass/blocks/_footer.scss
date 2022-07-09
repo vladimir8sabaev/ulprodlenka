@@ -1,0 +1,42 @@
+.footer{
+    background-color:rgb(255, 255, 255);
+    padding: 20px 0;
+    &__adress{
+        color: #000000;
+        &-header{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        &-descr{
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
+        }
+    }
+    &__about{
+        color: #000000;
+        &-header{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        &-descr{
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
+            a{
+                color: #000000;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+        }
+        &-icon{
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}

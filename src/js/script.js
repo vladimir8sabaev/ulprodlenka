@@ -23,9 +23,15 @@ $(document).ready(function(){
 			$('.modal-contact').modal('hide');
 		});
 	});
+	$('.modal-body-close').each(function(i){
+		$(this).on('click', function(){
+			$('.modal-thanks').modal('hide');
+		});
+	});
 
 	function validForms(form){ 
 		$(form).validate({
+			
 			rules: {
 				name: "required",
 				phone: "required",
@@ -53,4 +59,22 @@ $(document).ready(function(){
 
 	$('input[name = phone]').mask("+7 (999) 999-9999");
 	
+	$('form').submit(function(e) {
+        e.preventDefault();
+		$.ajax({
+			method: 'POST',
+			url: 'https://formsubmit.co/ajax/vladimir8sabaev@gmail.com',
+			dataType: 'json',
+			accepts: 'application/json',
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			if ($("#contacts-form-modal").valid()){
+				$('.modal-contact').modal('hide');
+				$('.modal-thanks').modal('show');
+			};
+			$('form').trigger('reset');
+		});
+		return false;
+    });
 });

@@ -9,14 +9,31 @@
                 position: relative;
                 &__close{
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: 0px;
+                    right: 0px;
                     font-size: 40px;
                     line-height: 20px;
                     color: white;
                     cursor: pointer;
                 }
             }
+        }
+    }
+    &-body{
+        position: relative;
+        &-text{
+            font-size: 22px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        &-close{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 40px;
+            line-height: 20px;
+            color: white;
+            cursor: pointer;
         }
     }
 }

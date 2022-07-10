@@ -1,0 +1,22 @@
+.modal{
+    &-content{
+        border-radius: 20px;
+        margin: 0 0;
+        padding: 0 0;
+        background-color:#5a5a5a;
+        .contacts{
+            &-form{
+                position: relative;
+                &__close{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 40px;
+                    line-height: 20px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

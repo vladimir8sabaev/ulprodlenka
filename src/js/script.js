@@ -11,7 +11,46 @@ $(document).ready(function(){
 	toggleSlide('.teachers__item-more');
 	toggleSlide('.teachers__item-back');
 
-	//modal
 	new WOW().init();
 
+	$('.button_mini').each(function(i){
+		$(this).on('click', function(){
+			$('.modal-contact').modal('show');
+		});
+	});
+	$('.contacts-form__close').each(function(i){
+		$(this).on('click', function(){
+			$('.modal-contact').modal('hide');
+		});
+	});
+
+	function validForms(form){ 
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required:true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Введите свое имя",
+				phone: "Введите свой номер",
+				email: {
+					required: "Введите свою почту",
+					email: "Неправильная почта"
+				}
+			},
+			errorPlacement:function(error,element){
+				error.appendTo(element.parent().after());
+            }
+		});
+	};
+
+	validForms('#contacts-form');
+	validForms('#contacts-form-modal');
+
+	$('input[name = phone]').mask("+7 (999) 999-9999");
+	
 });

@@ -37,7 +37,7 @@
 							<a class="nav-link text-light" aria-current="page" href="#contacts">Контакты</a>
 						</li>
 					</ul>
-					<button class="btn btn btn-outline-light text-nowrap fs-5" type="submit">Связаться с нами </button>
+					<button class="button_mini btn btn btn-outline-light text-nowrap fs-5" type="button">Связаться с нами </button>
 				</div>
 			</div>
 		</nav>
@@ -285,19 +285,21 @@
 							<div class="contacts-form__header">Просто заполните форму</div>
 							<div class="contacts-form__label">Имя *</div>
 							<div class="input-group mb-2">
-								<span class="input-group-text"></span>
-								<input required name="name" type="text" class="form-control" placeholder="Ваше имя">
+								<label for="name">
+									<input required name="name" type="text" class="form-control" placeholder="Ваше имя">
+								</label>
 							</div>
 							<div class="contacts-form__label">Телефон *</div>
 							<div class="input-group mb-2">
-								<span class="input-group-text"></span>
-								<input name="phone" required placeholder="Ваш телефон" type="tel" class="form-control">
+								<label for="phone">
+									<input name="phone" required placeholder="Ваш телефон" type="tel" class="form-control">
+								</label>
 							</div>
 							<div class="contacts-form__label">Электронная почта *</div>
 							<div class="input-group mb-2">
-								<span class="input-group-text"></span>
-								<input name="email" required placeholder="Ваш E-mail" type="email"
-								class="form-control">
+								<label for="email">
+									<input name="email" required placeholder="Ваш E-mail" type="email" class="form-control">
+								</label>
 							</div>
 							<button class="mt-4 btn btn-outline-light" type="submit">Отправить</button>
 						</form>
@@ -324,6 +326,48 @@
 			</div>
 		</div>
 	</footer>
+	<div class="overlay">
+		<div class="modal fade modal-contact" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<form id="contacts-form-modal" class="contacts-form">
+							<div class="contacts-form__close">&times;</div>	
+							<div class="contacts-form__header">Просто заполните форму</div>
+							<div class="contacts-form__label">Имя *</div>
+							<div class="input-group mb-2">
+								<label for="name">
+									<input required name="name" type="text" class="form-control" placeholder="Ваше имя">
+								</label>
+							</div>
+							<div class="contacts-form__label">Телефон *</div>
+							<div class="input-group mb-2">
+								<label for="phone">
+									<input name="phone" required placeholder="Ваш телефон" type="tel" class="form-control">
+								</label>
+							</div>
+							<div class="contacts-form__label">Электронная почта *</div>
+							<div class="input-group mb-2">
+								<label for="email">
+									<input name="email" required placeholder="Ваш E-mail" type="email" class="form-control">
+								</label>
+							</div>
+							<button class="mt-4 btn btn-outline-light" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade modal-thanks" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -339,12 +383,11 @@
 
 
 
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/wow.min.js"></script>

@@ -75,6 +75,27 @@
             color: #000000;
         }
     }
+    .overlay{
+        .modal{
+            &-body{
+                .contacts{
+                    &-form{
+                        &__label{
+                            font-size: 17px;
+                            margin: 7px 0;
+                        }
+                    }
+                    input{
+                        height: 50px;
+                        padding: 0 20px;
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
     .footer{
         &__adress{
             &-header{

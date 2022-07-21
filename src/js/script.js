@@ -13,6 +13,18 @@ $(document).ready(function(){
 
 	new WOW().init();
 
+	let ok = false;					
+	window.addEventListener('scroll', function() {
+		if (ok === false) {
+			ok = true;	
+			setTimeout(() => {					
+				let script = document.createElement('script');
+				script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2158462f1cffac6571247bd18f6f8f7befef2a4659e26943427e8f6f44224d57&amp;width=95%25&amp;height=440&amp;lang=ru_RU&amp;scroll=false';
+				document.getElementById('yamap').replaceWith(script);						
+			}, 5000)	
+		}
+});
+
 	$('.button_mini').each(function(i){
 		$(this).on('click', function(){
 			$('.modal-contact').modal('show');
